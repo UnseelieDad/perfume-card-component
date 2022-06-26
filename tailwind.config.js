@@ -13,6 +13,9 @@ module.exports = {
         monsterrat: ["Monsterrat", "sans-serif"],
         fraunces: ["Fraunces", "serif"],
       },
+      container: {
+        center: true,
+      },
     },
   },
   plugins: [],

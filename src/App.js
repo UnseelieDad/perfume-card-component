@@ -5,15 +5,16 @@ import desktopPerfume from "./assets/image-product-desktop.jpg";
 function App() {
   return (
     <div className="bg-cream py-8 h-screen flex flex-col">
-      <article className="container mx-auto rounded-lg shadow-md bg-white w-11/12 h-auto flex-1 overflow-hidden flex flex-col space-y-5">
-        <div className="basis-5/12 h-1/3 flex-auto">
+      {/* <article className="container my-auto rounded-lg shadow-md bg-white w-11/12 lg:w-5/12 h-auto flex-initial overflow-hidden flex flex-col space-y-5 lg:space-y-0 lg:flex-row"> */}
+      <article className="card lg:card-large">
+        <div className="basis-5/12 lg:bassis-6/12 h-1/3 lg:h-full flex-auto">
           <img
             src={desktopPerfume}
             alt="A perfume bottle."
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="basis-7/12 space-y-9 px-5">
+        <div className="basis-7/12 lg:basis-6/12 space-y-9 px-5 py-5">
           <section className="space-y-3">
             <header className="">
               <p className="font-monsterrat font-bold text-dark-gray-blue tracking-[.30em] text-md">
@@ -35,7 +36,7 @@ function App() {
                 $169.99
               </p>
             </div>
-            <button className="bg-dark-cyan flex flex-row w-full rounded-lg justify-center gap-x-2 py-5">
+            <button className="bg-dark-cyan flex flex-row w-full rounded-lg justify-center gap-x-2 py-5 hover:bg-very-dark-blue hover:cursor-pointer">
               <img src={cart} alt="Shopping cart" />
               <span className="text-sm font-monetrrat text-white font-bold">
                 Add to Cart
